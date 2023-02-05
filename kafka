@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+
+name="kafka"
+description=""
+command="/kafka/bin/kafka-server-start.sh /kafka/config/server.properties"
+#command_args=""
+command_background="yes"
+pidfile="/run/${RC_SVCNAME}.pid"
+output_log="/var/log/kafka.log"
+#command_user="user:user"

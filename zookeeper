@@ -1,0 +1,10 @@
+#!/sbin/openrc-run
+
+name="zookeeper"
+description=""
+command="/kafka/bin/zookeeper-server-start.sh /kafka/config/zookeeper.properties"
+#command_args="-c '/kafka/bin/zookeeper-server-start.sh /kafka/config/zookeeper.properties'"
+command_background="yes"
+pidfile="/run/${RC_SVCNAME}.pid"
+output_log="/var/log/zookeeper.log"
+#command_user="user:user"
